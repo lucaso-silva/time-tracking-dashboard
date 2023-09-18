@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+
+--main-font: 'Rubik', sans-serif;
+
+/* Primary */
+
+--blue: hsl(246, 80%, 60%);
+
+--light-red--work: hsl(15, 100%, 70%);
+--soft-blue--play: hsl(195, 74%, 62%);
+--light-red--study: hsl(348, 100%, 68%);
+--lime-green--exercise: hsl(145, 58%, 55%);
+--violet--social: hsl(264, 64%, 52%);
+--soft-orange--selfcare: hsl(43, 84%, 65%);
+
+/* Neutral */
+
+--very-dark-blue: hsl(226, 43%, 10%);
+--dark-blue: hsl(235, 46%, 20%);
+--desaturated-blue: hsl(235, 45%, 61%);
+--pale-blue: hsl(236, 100%, 87%);
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--very-dark-blue);
+}
+
+.card-user {
+    background-color: var(--dark-blue);
+    width: 90vw;
+    margin: 2em auto;
+    border-radius: 10px;
+    padding: .5em;
+}
+
+.user--info {
+    background-color: var(--desaturated-blue);
+    color: var(--pale-blue);
+}

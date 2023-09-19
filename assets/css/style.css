@@ -20,7 +20,9 @@
 --very-dark-blue: hsl(226, 43%, 10%);
 --dark-blue: hsl(235, 46%, 20%);
 --desaturated-blue: hsl(235, 45%, 61%);
+--blue: hsl(245, 68%, 58%);
 --pale-blue: hsl(236, 100%, 87%);
+--white: rgb(254, 254, 254);
 }
 
 body {
@@ -30,13 +32,47 @@ body {
 
 .card-user {
     background-color: var(--dark-blue);
-    width: 90vw;
+    width: 87.5vw;
     margin: 2em auto;
     border-radius: 10px;
-    padding: .5em;
+    padding-bottom: 1.25em;
 }
 
 .user--info {
-    background-color: var(--desaturated-blue);
-    color: var(--pale-blue);
+    background-color: var(--blue);
+    border-radius: 10px;
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
 }
+
+.user--info h2 {
+    font-size: .75em;
+    color: var(--pale-blue);
+    margin-bottom: .25em;
+}
+
+.user--info h1 {
+    font-size: 1.15em;
+    color: var(--white);
+    font-weight: 300;
+}
+
+img {
+    width: 50px;
+    border: 2px solid var(--white);
+    border-radius: 50px;
+    margin-right: 1em;
+}
+
+.period {
+    color: var(--desaturated-blue);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1em;
+}
+
+/* input {
+    display: none;
+} */

@@ -1,14 +1,39 @@
 .card-category {
     background-image: url('../img/icon-work.svg');
     background-color: var(--light-red--work);
+    background-repeat: no-repeat;
+    background-position: top right;
     width: 87.5vw;
     margin: 2em auto;
     border-radius: 10px;
-    padding-bottom: 1.25em;
+    padding-top: 2.25em;
 }
 
 .card-category > div {
     background-color: var(--dark-blue);
-    padding: 1em;
+    padding: 1.5em;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.current-info {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.current-info > p {
+    font-size: 1.75em;
+    font-weight: 300;
+    margin-top: .25em;
+}
+
+.past-info {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+    color: var(--pale-blue);
 }

@@ -1,3 +1,4 @@
+const containerCards = document.querySelector(".container-cards")
 
 export default function createCategoryCard(data) {
     let category =  data.title;
@@ -38,5 +39,7 @@ export default function createCategoryCard(data) {
 
     divCategoryCard.appendChild(divWrapper);
     divWrapper.appendChild(divCurrentInfo);
+    divWrapper.appendChild(divPastInfo);
     
+    containerCards.appendChild(divCategoryCard);
 }

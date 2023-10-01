@@ -1,7 +1,9 @@
 [
   {
+    "id": 1,
     "title": "Work",
-    "bg-img": "assets/img/icon-work.svg",
+    "backgroundImg": "assets/img/icon-work.svg",
+    "color":  "hsl(15, 100%, 70%)",
     "timeframes": {
       "daily": {
         "current": 5,
@@ -18,8 +20,10 @@
     }
   },
   {
+    "id": 2,
     "title": "Play",
-    "bg-img": "assets/img/icon-play.svg",
+    "backgroundImg": "assets/img/icon-play.svg",
+    "color":  "hsl(195, 74%, 62%)",
     "timeframes": {
       "daily": {
         "current": 1,
@@ -36,8 +40,10 @@
     }
   },
   {
+    "id": 3,
     "title": "Study",
-    "bg-img": "assets/img/icon-study.svg",
+    "backgroundImg": "assets/img/icon-study.svg",
+    "color":  "hsl(348, 100%, 68%)",
     "timeframes": {
       "daily": {
         "current": 0,
@@ -54,8 +60,10 @@
     }
   },
   {
+    "id": 4,
     "title": "Exercise",
-    "bg-img": "assets/img/icon-exercise.svg",
+    "backgroundImg": "assets/img/icon-exercise.svg",
+    "color": "hsl(145, 58%, 55%)",
     "timeframes": {
       "daily": {
         "current": 1,
@@ -72,8 +80,10 @@
     }
   },
   {
+    "id": 5,
     "title": "Social",
-    "bg-img": "assets/img/icon-social.svg",
+    "backgroundImg": "assets/img/icon-social.svg",
+    "color": "hsl(264, 64%, 52%)",
     "timeframes": {
       "daily": {
         "current": 1,
@@ -90,8 +100,10 @@
     }
   },
   {
+    "id": 6,
     "title": "Self Care",
-    "bg-img": "assets/img/icon-self-care.svg",
+    "backgroundImg": "assets/img/icon-self-care.svg",
+    "color": "hsl(43, 84%, 65%)",
     "timeframes": {
       "daily": {
         "current": 0,

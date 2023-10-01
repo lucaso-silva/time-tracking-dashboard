@@ -1,6 +1,4 @@
-.card-category {
-    background-image: url('../img/icon-work.svg');
-    background-color: var(--light-red--work);
+.card-category { 
     background-repeat: no-repeat;
     background-position: top right;
     width: 87.5vw;
@@ -36,4 +34,8 @@
     align-items: end;
     justify-content: space-around;
     color: var(--pale-blue);
+}
+
+span::before {
+    content: " - ";
 }

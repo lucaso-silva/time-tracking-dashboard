@@ -5,6 +5,7 @@
     margin: 2em auto;
     border-radius: 10px;
     padding-top: 2.25em;
+    box-sizing: content-box;
 }
 
 .card-category > div {

@@ -40,3 +40,68 @@
 span::before {
     content: " - ";
 }
+
+@media screen and (min-width: 768px) {
+    .card-category {
+        width: 90%;
+        border-radius: 10px;
+        padding-top: 2.25em;
+        border: 1px solid greenyellow;
+    }
+    
+    #card-1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    #card-2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    #card-3 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    
+    #card-4 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    #card-5 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    #card-6 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    #card-1, #card-2, #card-3 {
+        margin: 2em auto .5em auto;
+    }
+
+    #card-4, #card-5, #card-6 {
+        margin: .5em auto 2em auto;
+    }
+
+    .card-category > div {
+        background-color: var(--dark-blue);
+        padding: 1.5em;
+        border-radius: 10px;
+        border: 1px solid red ;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .current-info {
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid purple; 
+    }
+
+}

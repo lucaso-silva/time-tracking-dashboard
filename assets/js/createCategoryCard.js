@@ -24,23 +24,27 @@ export default function createCategoryCard(data) {
 
     let categoryTitle = document.createElement("h3");
     categoryTitle.innerText = category;
-    let infoCurrentTime = document.createElement("p");
-    infoCurrentTime.innerText = currentDailyTimeInfo
+    let changePeriodButton = document.createElement("p");
+    changePeriodButton.innerText = ". . ."
+    //let infoCurrentTime = document.createElement("p");
+    //infoCurrentTime.innerText = `${currentDailyTimeInfo}hrs`
 
     divCurrentInfo.appendChild(categoryTitle);
-    divCurrentInfo.appendChild(infoCurrentTime);
+    divCurrentInfo.appendChild(changePeriodButton);
 
     let divPastInfo = document.createElement("div");
     divPastInfo.classList.add("past-info");
 
-    let changePeriodButton = document.createElement("p");
-    changePeriodButton.innerText = ". . ."
+    let infoCurrentTime = document.createElement("h4");
+    infoCurrentTime.innerText = `${currentDailyTimeInfo}hrs`
+    //let changePeriodButton = document.createElement("p");
+    //changePeriodButton.innerText = ". . ."
     let lastPeriodParagraph = document.createElement("p");
     lastPeriodParagraph.innerText = "Last week"
     let spanInfoTime = document.createElement("span");
     spanInfoTime.innerText = "32 hrs"
 
-    divPastInfo.appendChild(changePeriodButton);
+    divPastInfo.appendChild(infoCurrentTime);
     divPastInfo.appendChild(lastPeriodParagraph);
     lastPeriodParagraph.appendChild(spanInfoTime);
 

@@ -13,28 +13,39 @@
     padding: 1.5em;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .current-info {
     color: var(--white);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
 .current-info > p {
     font-size: 1.75em;
     font-weight: 300;
-    margin-top: .25em;
 }
 
 .past-info {
     display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     color: var(--pale-blue);
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--white);
+}
+
+.past-info > p {
+    font-size: .85em;
 }
 
 span::before {
@@ -87,21 +98,29 @@ span::before {
         margin: .5em auto 2em auto;
     }
 
+    h3 {
+        font-size: .85em;
+    }
+
     .card-category > div {
-        background-color: var(--dark-blue);
         padding: 1.5em;
-        border-radius: 10px;
         border: 1px solid red ;
-        display: flex;
-        justify-content: space-between;
+        flex-direction: column;
     }
     
     .current-info {
         color: var(--white);
-        display: flex;
-        flex-direction: column;
         justify-content: space-between;
         border: 1px solid purple; 
+    }
+
+    .past-info {
+        flex-direction: column;
+        align-items: self-start;
+    }
+
+    .past-info > p {
+        font-size: .75em;
     }
 
 }

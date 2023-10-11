@@ -27,7 +27,7 @@
     font-weight: 300;
 }
 
-img {
+.user--info > img {
     width: 50px;
     border: 2px solid var(--white);
     border-radius: 50px;
@@ -43,6 +43,15 @@ img {
     margin-top: 1em;
 }
 
+.period input {
+    display: none;
+}
+
+label:hover {
+    color: var(--white);
+    cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
     .card-user {
         grid-column: 1/2;
@@ -52,11 +61,16 @@ img {
 
     .user--info {
         flex-direction: column;
+        justify-content: space-around;
+        height: 50%;
+        align-items: start;
     }
 
     .period {
         flex-direction: column;
         align-items: self-start;
+        justify-content: space-evenly;
         margin: 1em;
+        height: 30%;
     }
 }

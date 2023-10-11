@@ -24,8 +24,8 @@ export default function createCategoryCard(data) {
 
     let categoryTitle = document.createElement("h3");
     categoryTitle.innerText = category;
-    let changePeriodButton = document.createElement("p");
-    changePeriodButton.innerText = ". . ."
+    let changePeriodButton = document.createElement("img");
+    changePeriodButton.setAttribute("src", "assets/img/three-dots.svg")
     //let infoCurrentTime = document.createElement("p");
     //infoCurrentTime.innerText = `${currentDailyTimeInfo}hrs`
 

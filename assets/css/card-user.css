@@ -48,8 +48,12 @@
 }
 
 label:hover {
-    color: var(--white);
+    color: var(--pale-blue);
     cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    color: var(--white);
 }
 
 @media screen and (min-width: 768px) {

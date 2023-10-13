@@ -1,17 +1,24 @@
 const containerCards = document.querySelector(".container-cards")
 
-export default function createCategoryCard(data) {
-    //console.log(data);
+export default function createCategoryCard(data, period) {
+    
+    let timePeriod = period;
     let backgroundImg = data.backgroundImg;
     let backgroundColor = data.color;
     let category =  data.title;
     let id = data.id;
-    let currentDailyTimeInfo = data.timeframes.daily.current;
-    let currentWeeklyTimeInfo = data.timeframes.weekly.current;
-    let currentMonthTimeInfo = data.timeframes.monthly.current
+    let currentTimeInfo;
+
+    if(timePeriod == 'daily') {
+        currentTimeInfo = data.timeframes.daily.current;
     
-    //console.log("category: " + category + ". daily: " + currentDailyTimeInfo + " . weekly: " + currentWeeklyTimeInfo + " . monthly: " + currentMonthTimeInfo);
+    } else if(timePeriod == "monthly") {
+        currentTimeInfo = data.timeframes.monthly.current;
     
+    } else {
+        currentTimeInfo = data.timeframes.weekly.current;
+    }
+      
     let divCategoryCard = document.createElement("div");
     divCategoryCard.classList.add("card-category");
     divCategoryCard.setAttribute("id", `card-${id}`);
@@ -26,8 +33,7 @@ export default function createCategoryCard(data) {
     categoryTitle.innerText = category;
     let changePeriodButton = document.createElement("img");
     changePeriodButton.setAttribute("src", "assets/img/three-dots.svg")
-    //let infoCurrentTime = document.createElement("p");
-    //infoCurrentTime.innerText = `${currentDailyTimeInfo}hrs`
+    
 
     divCurrentInfo.appendChild(categoryTitle);
     divCurrentInfo.appendChild(changePeriodButton);
@@ -36,9 +42,8 @@ export default function createCategoryCard(data) {
     divPastInfo.classList.add("past-info");
 
     let infoCurrentTime = document.createElement("h4");
-    infoCurrentTime.innerText = `${currentDailyTimeInfo}hrs`
-    //let changePeriodButton = document.createElement("p");
-    //changePeriodButton.innerText = ". . ."
+    infoCurrentTime.innerText = `${currentTimeInfo}hrs`
+    
     let lastPeriodParagraph = document.createElement("p");
     lastPeriodParagraph.innerText = "Last week"
     let spanInfoTime = document.createElement("span");

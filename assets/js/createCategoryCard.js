@@ -8,15 +8,23 @@ export default function createCategoryCard(data, period) {
     let category =  data.title;
     let id = data.id;
     let currentTimeInfo;
+    let lastPeriod;
+    let pastTimeInfo;
 
     if(timePeriod == 'daily') {
         currentTimeInfo = data.timeframes.daily.current;
+        lastPeriod = "Yesterday"
+        pastTimeInfo = data.timeframes.daily.previous;
     
     } else if(timePeriod == "monthly") {
         currentTimeInfo = data.timeframes.monthly.current;
+        lastPeriod = "Last month"
+        pastTimeInfo = data.timeframes.monthly.previous;
     
     } else {
         currentTimeInfo = data.timeframes.weekly.current;
+        lastPeriod = "Last week"
+        pastTimeInfo = data.timeframes.weekly.previous;
     }
       
     let divCategoryCard = document.createElement("div");
@@ -45,9 +53,9 @@ export default function createCategoryCard(data, period) {
     infoCurrentTime.innerText = `${currentTimeInfo}hrs`
     
     let lastPeriodParagraph = document.createElement("p");
-    lastPeriodParagraph.innerText = "Last week"
+    lastPeriodParagraph.innerText = lastPeriod;
     let spanInfoTime = document.createElement("span");
-    spanInfoTime.innerText = "32 hrs"
+    spanInfoTime.innerText = `${pastTimeInfo} hrs`
 
     divPastInfo.appendChild(infoCurrentTime);
     divPastInfo.appendChild(lastPeriodParagraph);

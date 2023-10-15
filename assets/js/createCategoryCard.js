@@ -39,8 +39,9 @@ export default function createCategoryCard(data, period) {
 
     let categoryTitle = document.createElement("h3");
     categoryTitle.innerText = category;
-    let changePeriodButton = document.createElement("img");
-    changePeriodButton.setAttribute("src", "assets/img/three-dots.svg")
+    let changePeriodButton = document.createElement("span");
+    changePeriodButton.classList.add("material-symbols-outlined");
+    changePeriodButton.innerText = "\ue5d3"
     
 
     divCurrentInfo.appendChild(categoryTitle);
